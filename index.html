@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- CSS fájlok beszúrása. -->
+        <link rel="stylesheet" href="css/main.css"> <!-- A rel-lel meg tudjuk mondani, hogy az milyen típusú fájl. -->
+        
+    
+    </head>
+    <body>
+        
+        <!-- Navigáció -->
+        <nav>
+            <a target="_blank" href="https://sciencedaily.com">Sciencedaily</a>
+            <a href="pages/about.html">Rólam</a>
+            <a href="#section1">1. szekció</a>
+            <a href="#section2">2. szekció</a>
+            <a href="#" onclick="bigSection()">Szekció növelése</a>
+        </nav>
+        <!-- Első szekció -->
+        
+        <section id="section1">
+        
+            <!-- Új bejegyzés. -->
+            <article>
+
+                <h1>Regisztráció</h1>
+                <p>Kérjük adja meg adatait</p>
+
+                <!-- Regisztrációs űrlap -->
+                <form novalidate method="get" action="http://nettuts.hu/post"> <!-- Űrlap -->
+                    
+                    <!-- E-mail cím -->
+                    <label for="email1">Email cím:</label>
+                    <input name="email1" type="email" id="email1" autofocus>
+                    <br>
+                    
+                    <!-- Életkor -->
+                    <label for="age1">Életkorod:</label>
+                    <input name="age1" type="number" id="age1" min="18" max="60">
+                    <br>
+                    
+                    <!-- Születési idő -->
+                    <label for="bd1">Születési időd:</label>
+                    <input name="bd1" type="date" id="bd1" min="1972-03-27" max="2000-09-01">
+                    <br>
+                    
+                    <!-- Kedvenc szín -->
+                    <label for="color1">Kedvenc színed:</label>
+                    <input name="color1" type="color" id="color1">
+                    <br>
+                    
+                    <!-- Fotó -->
+                    <label for="foto">Profilkép:</label>
+                    <input name="foto" type="file" id="foto">
+                    <br>
+                    
+                    <!-- Jelszó -->
+                    <label for="password1">Jelzsó:</label>
+                    <input name="password1" type="password" id="password1">
+                    <br>
+                    
+                    <!-- Küldés -->
+                    <input type="submit" value="Regisztrálok">
+                </form>
+
+            </article>
+        </section>
+        
+       <!-- A &nbsp; egy törhetetlen szóköz. Ez azért jó, mert így biztosan megjelenik a térköz. -->
+        
+        
+        <!-- Lábléc -->
+        <footer style="position: fixed; left: 0; right: 0; bottom:0;">
+            &copy; Bagány Máté
+        </footer>
+        
+        <!-- JS fájlok beszúrása. -->
+        <script src="js/main.js"></script>    
+    
+    </body>
+</html>
